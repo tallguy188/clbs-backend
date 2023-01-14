@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: clbs-gateway
+
+server:
+  port: 8100
+
+zuul:
+  routes:
+    service-1:
+      stripPrefix: false
+      path: /api/culture/**
+      url: http://localhost:8881
+    service-2:
+      stripPrefix: false
+      path: /api/user/**
+      url: http://localhost:8882
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8081/clbs/

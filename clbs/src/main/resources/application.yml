@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: clbs-infomation-server
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/clbs/
+    registerWithEureka: false
+    fetchRegistry: false
