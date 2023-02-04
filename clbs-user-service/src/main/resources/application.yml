@@ -1,0 +1,12 @@
+spring: 
+  application:
+    name: clbs-user-service
+
+server: 
+  port: 8882
+
+eureka:
+  client:
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka
