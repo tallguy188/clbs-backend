@@ -1,17 +1,17 @@
 spring:
   application:
-    name: clbs-gateway
+    name: clbs-gateway-server
 
 server:
-  port: 8100
+  port: 8080
 
 zuul:
   routes:
-    service-1:
+    culture-service:
       stripPrefix: false
       path: /api/culture/**
       url: http://localhost:8881
-    service-2:
+    user-service:
       stripPrefix: false
       path: /api/user/**
       url: http://localhost:8882
@@ -20,4 +20,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://localhost:8081/clbs/
+      defaultZone: http://localhost:8081/eureka

@@ -1,0 +1,12 @@
+spring: 
+  application:
+    name: clbs-culture-service
+
+server: 
+  port: 8881
+
+eureka:
+  client:
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka

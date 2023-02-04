@@ -8,6 +8,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8081/clbs/
+      defaultZone: http://localhost:8081/eureka
     registerWithEureka: false
     fetchRegistry: false

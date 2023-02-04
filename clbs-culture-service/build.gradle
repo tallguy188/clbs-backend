@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 }
 
-group = 'com.clbs.gw'
+group = 'com.clbs.culture'
 sourceCompatibility = '11'
 
 repositories {
@@ -15,7 +15,5 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '2.2.9.RELEASE'
-	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-zuul', version: '2.2.9.RELEASE'
-
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

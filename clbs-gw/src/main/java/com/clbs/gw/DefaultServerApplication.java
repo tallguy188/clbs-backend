@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
-import com.clbs.filter.ErrorFilter;
-import com.clbs.filter.PostFilter;
-import com.clbs.filter.PreFilter;
-import com.clbs.filter.RouteFilter;
+import com.clbs.gw.filter.ErrorFilter;
+import com.clbs.gw.filter.PostFilter;
+import com.clbs.gw.filter.PreFilter;
+import com.clbs.gw.filter.RouteFilter;
 
 @SpringBootApplication
 @EnableZuulProxy
