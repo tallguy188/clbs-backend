@@ -1,0 +1,7 @@
+spring: 
+  application:
+    name: clbs-backoffice-service
+
+server: 
+  port: 8888
+
